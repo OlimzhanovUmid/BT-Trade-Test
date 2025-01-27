@@ -1,0 +1,16 @@
+{
+    "spec": {
+        "targets": {
+            "android": {
+                "ui": [
+                    "compose"
+                ]
+            },
+            "desktop": {
+                "ui": [
+                    "compose"
+                ]
+            }
+        }
+    }
+}
