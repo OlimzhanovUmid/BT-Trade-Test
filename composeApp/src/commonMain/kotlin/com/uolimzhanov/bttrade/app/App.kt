@@ -1,4 +1,4 @@
-package com.uolimzhanov.bttrade
+package com.uolimzhanov.bttrade.app
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
