@@ -37,7 +37,7 @@ import org.jetbrains.compose.resources.painterResource
 @Composable
 fun ShopTopAppBar(
     state: ShopState = ShopState(),
-    onAction: (ShopAction) -> Unit
+    onAction: (ShopAction) -> Unit = {}
 ) {
     Row(
         modifier = Modifier.fillMaxWidth(),
@@ -147,7 +147,9 @@ fun ShiftControlPanel(
             )
         }
         Button(
-            onClick = onCloseShift,
+            onClick = {
+                onAction(ShopAction.CloseShift)
+            },
             shape = moderatelyRoundedCornerShape,
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color.White,
