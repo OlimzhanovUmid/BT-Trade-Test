@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffoldLayout
+import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteType
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -35,7 +36,8 @@ fun App() = KoinApplication(
                 NavigationSuiteScaffoldLayout(
                     navigationSuite = {
                         AppNavigationRail()
-                    }
+                    },
+                    layoutType = NavigationSuiteType.NavigationRail
                 ) {
                     Column(
                         modifier = Modifier.padding(16.dp),
